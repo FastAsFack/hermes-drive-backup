@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Drive Backup</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f7f7f5;
+    color: #1d1d1b;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+  .kicker { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #6b6b66; }
+  h1 { margin: 0 0 12px; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; }
+  .lede { margin: 0 0 40px; font-size: 19px; color: #44443f; max-width: 620px; }
+  section { padding: 24px 0; border-top: 1px solid #deded8; }
+  h2 { margin: 0 0 10px; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; color: #6b6b66; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #0b5cad; text-underline-offset: 2px; }
+  footer { margin-top: 8px; padding-top: 24px; border-top: 1px solid #deded8; font-size: 14px; color: #6b6b66; }
+  footer p { margin: 0 0 6px; }
+  @media (max-width: 520px) { h1 { font-size: 32px; } main { padding-top: 40px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">Private backup tool</p>
+    <h1>Hermes Drive Backup</h1>
+    <p class="lede">Encrypted, automatic backups of a self-hosted dashboard to the owner's Google Drive.</p>
+  </header>
+
+  <section>
+    <h2>What it does</h2>
+    <p>Hermes Drive Backup is a private, single-user tool. Once a day it creates an archive of a self-hosted dashboard, encrypts it, uploads it to a dedicated folder in the owner's Google Drive, and removes archives older than 30 days.</p>
+    <p>It is not a public service. There is no sign-up, no account system, and no other user. It runs on the owner's own server and is used only by the owner.</p>
+  </section>
+
+  <section>
+    <h2>How it uses Google Drive</h2>
+    <p>The app requests access to Google Drive only to create, list, download, and delete its own backup archives in a folder it owns. It does not read, modify, or share any other files in the Google Account.</p>
+  </section>
+
+  <section>
+    <h2>Data and privacy</h2>
+    <p>Backups are encrypted before they leave the owner's server. The encryption key is stored on that server, not in Google Drive. Nothing is sold, shared, or used for advertising.</p>
+    <p>Read the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Service</a>.</p>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="https://github.com/FastAsFack/hermes-drive-backup/issues">open an issue</a>.</p>
+    <p>Last updated: 2 November 2026.</p>
+  </footer>
+</main>
+</body>
+</html>
